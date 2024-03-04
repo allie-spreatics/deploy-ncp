@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>방명록 확인</title>
+    <title>생일파티 초대장</title>
   </head>
   <body>
-    <h2>희원이의 생일파리 초대장</h2>
+    <h2>생일파리 초대장</h2>
     <section>
       <p>6월 4일은 히원이의 생일입니다. 축하해주세요!</p>
       <img src="/public/img/heew1.png" alt="heew_0_1" width="150" />
@@ -23,7 +23,6 @@
       <br />
       <textarea id="content" cols="30" rows="10" placeholder="히원이에게 한마디"></textarea>
     </form>
-    <p>~~~ 축하메세지 기능 아직 안됨 ~~~</p>
 
     <%for(let el of data){%>
     <ul>
@@ -32,8 +31,5 @@
       <li>등록날짜 <%=el.registered_date%></li>
     </ul>
     <% } %>
-
-    <div>예정: d-day, 히원이의 생일까지 ~일 ~ 분 남았어요!</div>
-    <div>예정: 달력 import</div>
   </body>
 </html>
